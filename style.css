@@ -1,0 +1,81 @@
+/* ——————————————————— CSS Reset ——————————————————— */
+* {margin:0;padding:0;border:0;background:transparent;outline:none;text-decoration:none;outline:none;font-family:inherit;box-sizing:border-box;}
+ol, ul, li {list-style:none;display:block;}
+table {border-collapse: collapse;border-spacing:0;}
+a img {border: none;}
+
+button,
+a{cursor: pointer; color: inherit;}
+
+textarea{resize: none;}
+
+button,
+input,
+textarea,
+select{appearance: none !important; -webkit-appearance: none !important; border-radius: 0;}
+/* —————————————————————————————————————————————— */
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    background-color: var(--primary);
+}
+
+:root {  
+    --primary: #242d38;
+    --secondary: #efd592;       
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    border-bottom: 1px solid grey;
+    font-size: 36px;
+    color: var(--secondary);
+
+    z-index: 50;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    position: absolute;
+    align-items: center;
+    justify-content: center;     
+
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.card {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    margin: 45px 10px;
+    padding: 40px;
+    background-color: var(--secondary);
+}
+
+hr { 
+    border: 1px solid grey; 
+    margin: 1em 0;
+}
+
+.number {
+
+}
+
+/* Material Icon: */
+.menu {
+    font-size: 24px;
+    color: var(--secondary);;
+}
+
+
+
+@media screen and (max-width: 740px) {}
